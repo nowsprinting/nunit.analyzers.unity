@@ -1,16 +1,19 @@
 # NUnit.Analyzers for Unity
 
+[![openupm](https://img.shields.io/npm/v/nunit.analyzers.unity?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/nunit.analyzers.unity/)
+
 This package includes [NUnit.Analyzers](https://github.com/nunit/nunit.analyzers) DLL. And done set up for use on Unity
 Editor and IDEs.
 
 
 ## Required
 
-Unity 2020.3.4f1[^1][^2] or later
+Unity 2021.2.0f1[^1][^2][^3] or later
 
-[^1]: Roslyn analyzer will work with Unity 2020.2 or later, but DLLs placed under Packages/ will not be worked until
+[^1]: Roslyn analyzer will work with Unity 2020.2 or later, but DLLs placed under Packages will not be worked until
 2020.3.4+.
-[^2]: Can be used before Unity 2019 if you are using it on IDEs.
+[^2]: Roslyn analyzer will work with Unity 2020.2 or later, but diagnostic to test assembly will not be worked until 2021.2+.
+[^3]: Can be used before Unity 2019 if you are using it on IDEs.
 
 
 ## Installation
@@ -34,8 +37,19 @@ https://github.com/nowsprinting/nunit.analyzers.unity.git
 2. Add "Assembly Definition References" and select `NUnit.Analyzers.Unity`.
 3. Click "Apply"
 
-Refer to the NUnit
-Analyzers [documentation](https://github.com/nunit/nunit.analyzers/blob/master/documentation/index.md) for diagnostics.
+Refer to the NUnit Analyzers [documentation](https://github.com/nunit/nunit.analyzers/blob/master/documentation/index.md) for diagnostics.
+
+
+## Analyzer import script for IDEs
+
+Plug-in packages for IDEs (JetBrains Rider, Visual Studio Code, Visual Studio) create .csproj files.
+But, there are problems with handling analyzer settings, correctly handling DLLs under Packages, and incorrectly handling assembly dependencies[^4].
+
+[^4]: See details, "Analyzer scope" section in https://docs.unity3d.com/2020.2/Documentation/Manual/roslyn-analyzers.html
+
+The [AnalyzerImporter](https://gist.github.com/nowsprinting/d303785b006f6c1ebd5dd12ecbe1a4ec) script is included in this package.
+This will set up the analyzers in the .csproj file according to the dependencies of the assembly.
+However, It does not work the chain of dependence. Only dependencies written directly to asmdef will work.
 
 
 ## License
