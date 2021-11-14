@@ -60,3 +60,10 @@ MIT License
 ## How to contribute
 
 Open an issue or create a pull request.
+
+
+## Release workflow
+
+Bump version in package.json && push (or merge) to default branch.
+
+Or run [Create release pull request](https://github.com/nowsprinting/nunit.analyzers.unity/actions/workflows/create_release_pr.yml) workflow and merge PR.
