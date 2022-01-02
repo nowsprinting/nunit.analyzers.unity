@@ -2,8 +2,13 @@
   "name": "nunit.analyzers.unity",
   "displayName": "NUnit.Analyzers for Unity",
   "version": "3.2.0",
-  "unity": "2020.3",
-  "unityRelease": "4f1",
+  "unity": "2021.2",
+  "unityRelease": "0f1",
+  "dependencies": {
+    "com.unity.ide.rider": "3.0.9",
+    "com.unity.ide.visualstudio": "2.0.11",
+    "com.unity.ide.vscode": "1.2.4"
+  },
   "description": "Include NUnit.Analyzers package",
   "homepage": "https://github.com/nowsprinting/nunit.analyzers.unity",
   "license": "MIT",
