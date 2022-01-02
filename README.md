@@ -66,6 +66,12 @@ Open an issue or create a pull request.
 
 ## Release workflow
 
-Bump version in package.json && push (or merge) to default branch.
-
+Bump version in package.json on default branch.
 Or run [Create release pull request](https://github.com/nowsprinting/nunit.analyzers.unity/actions/workflows/create_release_pr.yml) workflow and merge PR.
+
+Then, Will do the release process automatically by [Release when bump version](.github/workflows/release_when_bump_version.yml) workflow.
+
+Do **not** manually operation the following operations:
+
+- Create release tag
+- Publish draft releases
