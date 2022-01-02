@@ -1,7 +1,7 @@
 {
   "name": "nunit.analyzers.unity",
   "displayName": "NUnit.Analyzers for Unity",
-  "version": "3.2.0",
+  "version": "3.2.0-p1",
   "unity": "2021.2",
   "unityRelease": "0f1",
   "dependencies": {
