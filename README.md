@@ -8,10 +8,12 @@ Editor and IDEs.
 
 ## Required
 
-Unity 2021.2.0f1[^1][^2][^3] or later
+* Unity 2021.2.0f1[^1][^2][^3] or later
+* [JetBrains Rider Editor](https://docs.unity3d.com/Packages/com.unity.ide.rider@latest) v3.0.9 or later
+* [Code Editor Package for Visual Studio](https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@latest) v2.0.11 or later
+* [Code Editor Package for Visual Studio Code](https://docs.unity3d.com/Packages/com.unity.ide.vscode@latest) v1.2.4 or later
 
-[^1]: Roslyn analyzer will work with Unity 2020.2 or later, but DLLs placed under Packages will not be worked until
-2020.3.4+.
+[^1]: Roslyn analyzer will work with Unity 2020.2 or later, but DLLs placed under Packages will not be worked until 2020.3.4+.
 [^2]: Roslyn analyzer will work with Unity 2020.2 or later, but diagnostic to test assembly will not be worked until 2021.2+.
 [^3]: Can be used before Unity 2019 if you are using it on IDEs.
 
