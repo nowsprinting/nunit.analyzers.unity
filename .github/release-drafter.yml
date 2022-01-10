@@ -5,6 +5,13 @@ template: |
   ## What’s Changed
   $CHANGES
 
+  ## More Information
+  Changes in NUnit.Analyzers (version number are same)
+  https://github.com/nunit/nunit.analyzers/releases
+
+  Get the UPM package
+  https://openupm.com/packages/nunit.analyzers.unity/
+
 categories:
   - title: '🦑 Features'
     labels:
