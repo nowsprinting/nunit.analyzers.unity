@@ -1,26 +1,24 @@
 {
   "name": "nunit.analyzers.unity",
-  "displayName": "NUnit.Analyzers for Unity",
   "version": "3.3.0",
+  "displayName": "NUnit.Analyzers for Unity",
+  "description": "Include NUnit.Analyzers package, See https://github.com/nunit/nunit.analyzers/releases",
   "unity": "2021.2",
   "unityRelease": "0f1",
+  "documentationUrl": "https://github.com/nowsprinting/nunit.analyzers.unity/blob/master/README.md",
+  "changelogUrl": "https://github.com/nowsprinting/nunit.analyzers.unity/releases",
+  "licensesUrl": "https://github.com/nowsprinting/nunit.analyzers.unity/blob/master/LICENSE.md",
+  "license": "MIT",
   "dependencies": {
     "com.unity.ide.rider": "3.0.9",
     "com.unity.ide.visualstudio": "2.0.11",
     "com.unity.ide.vscode": "1.2.4"
   },
-  "description": "Include NUnit.Analyzers package",
-  "homepage": "https://github.com/nowsprinting/nunit.analyzers.unity",
-  "license": "MIT",
-  "author": "nowsprinting <hasegawa@hubsys.co.jp> (https://github.com/nowsprinting)",
-  "changelogUrl": "https://github.com/nowsprinting/nunit.analyzers.unity/releases",
   "keywords": [
+    "testing",
     "tests",
     "NUnit",
     "Analyzer"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nowsprinting/nunit.analyzers.unity.git"
-  }
+  "author": "nowsprinting <hasegawa@hubsys.co.jp> (https://github.com/nowsprinting)"
 }
