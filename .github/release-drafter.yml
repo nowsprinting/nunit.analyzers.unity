@@ -5,13 +5,6 @@ template: |
   ## What’s Changed
   $CHANGES
 
-  ## More Information
-  Changes in NUnit.Analyzers (version number are same)
-  https://github.com/nunit/nunit.analyzers/releases
-
-  Get the UPM package
-  https://openupm.com/packages/nunit.analyzers.unity/
-
 categories:
   - title: '🦑 Features'
     labels:
@@ -35,7 +28,7 @@ exclude-labels:
   - 'skip-changelog'
 
 category-template: '### $TITLE'
-change-template: '- $TITLE #$NUMBER'
+change-template: '- $TITLE #$NUMBER by @$AUTHOR'
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 
 version-resolver:
