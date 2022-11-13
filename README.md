@@ -8,14 +8,13 @@ Editor and IDEs.
 
 ## Required
 
-* Unity 2021.2.0f1[^1][^2][^3] or later
+* Unity 2020.3.6f1[^1][^2] or later
 * [JetBrains Rider Editor](https://docs.unity3d.com/Packages/com.unity.ide.rider@latest) v3.0.9 or later
 * [Code Editor Package for Visual Studio](https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@latest) v2.0.11 or later
 * [Code Editor Package for Visual Studio Code](https://docs.unity3d.com/Packages/com.unity.ide.vscode@latest) v1.2.4 or later
 
-[^1]: Roslyn analyzer will work with Unity 2020.2 or later, but DLLs placed under Packages will not be worked until 2020.3.4+.
-[^2]: Roslyn analyzer will work with Unity 2020.2 or later, but diagnostic to test assembly will not be worked until 2021.2+.
-[^3]: Can be used before Unity 2019 if you are using it on IDEs.
+[^1]: Roslyn analyzer will work with Unity 2020.2 or later, but DLLs placed under Packages will not be worked until 2020.3.6+.
+[^2]: Can be used before Unity 2019 if you are using it on IDEs.
 
 
 ## Installation
@@ -36,7 +35,7 @@ https://github.com/nowsprinting/nunit.analyzers.unity.git
 ## How to use
 
 1. Open your test assembly definition file (.asmdef) in Inspector Window
-2. Add "Assembly Definition References" and select `NUnit.Analyzers.Unity`.
+2. Add "Assembly Definition References" and select `NUnit.Analyzers.Unity` (required Unity 2021.2 or later) or `NUnit.Analyzers.V2.Unity`
 3. Click "Apply"
 
 Refer to the NUnit Analyzers [documentation](https://github.com/nunit/nunit.analyzers/blob/master/documentation/index.md) for diagnostics.
