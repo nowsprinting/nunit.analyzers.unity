@@ -2,6 +2,9 @@
 
 [![openupm](https://img.shields.io/npm/v/nunit.analyzers.unity?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/nunit.analyzers.unity/)
 
+> **Warning**
+> This package is no longer maintained, please use [UnityNuGet](https://github.com/xoofx/UnityNuGet).
+
 This package includes [NUnit.Analyzers](https://github.com/nunit/nunit.analyzers) DLL. And done set up for use on Unity
 Editor and IDEs.
 
