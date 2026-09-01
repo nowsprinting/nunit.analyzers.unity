@@ -1,24 +1,29 @@
 {
   "name": "nunit.analyzers.unity",
-  "version": "3.3.1",
-  "displayName": "NUnit.Analyzers for Unity",
   "description": "Include NUnit.Analyzers package, See https://github.com/nunit/nunit.analyzers/releases",
-  "unity": "2020.3",
-  "unityRelease": "6f1",
-  "documentationUrl": "https://github.com/nowsprinting/nunit.analyzers.unity/blob/master/README.md",
+  "version": "3.3.1",
+  "author": "Koji Hasegawa <hasegawa@hubsys.co.jp> (https://github.com/nowsprinting)",
+  "category": "Unity Test Framework",
   "changelogUrl": "https://github.com/nowsprinting/nunit.analyzers.unity/releases",
-  "licensesUrl": "https://github.com/nowsprinting/nunit.analyzers.unity/blob/master/LICENSE.md",
-  "license": "MIT",
-  "dependencies": {
-    "com.unity.ide.rider": "3.0.9",
-    "com.unity.ide.visualstudio": "2.0.11",
-    "com.unity.ide.vscode": "1.2.4"
-  },
-  "keywords": [
-    "testing",
-    "tests",
-    "NUnit",
-    "Analyzer"
+  "dependencies": {},
+  "displayName": "NUnit.Analyzers for Unity",
+  "documentationUrl": "https://github.com/nowsprinting/nunit.analyzers.unity/blob/master/README.md",
+  "files": [
+    "NUnit.Analyzers.3.9.0/",
+    "NUnit.Analyzers.3.9.0.meta",
+    "LICENSE.md*",
+    "package.json*",
+    "README.md*",
+    "Third Party Notices.md*"
   ],
-  "author": "Koji Hasegawa <hasegawa@hubsys.co.jp> (https://github.com/nowsprinting)"
+  "keywords": [
+    "Analyzer",
+    "NUnit",
+    "testing",
+    "tests"
+  ],
+  "license": "MIT",
+  "licensesUrl": "https://github.com/nowsprinting/nunit.analyzers.unity/blob/master/LICENSE.md",
+  "repository": "https://github.com/nowsprinting/nunit.analyzers.unity",
+  "unity": "2022.2"
 }
