@@ -1,16 +1,35 @@
+# Copyright (c) 2021-2026 Koji Hasegawa.
+# This software is released under the MIT License.
+
 name: Update draft release
 
 on:
   push:
     branches:
       - master
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions: {}
+
+defaults:
+  run:
+    shell: bash
 
 jobs:
   release-drafter:
-    runs-on: ubuntu-latest
+    if: github.event.repository.fork == false # Skip on forked repo
+    runs-on: ubuntu-slim
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      pull-requests: read
 
     steps:
-      - uses: release-drafter/release-drafter@v5
+      - uses: release-drafter/release-drafter@693d20e7c1ce1a81d3a41962f85914253b518449 # v7
         with:
           config-name: release-drafter.yml
         env:
