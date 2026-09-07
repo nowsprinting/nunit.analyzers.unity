@@ -15,17 +15,13 @@ This package includes [NUnit.Analyzers](https://github.com/nunit/nunit.analyzers
 
 ## Installation
 
-If you installed [openupm-cli](https://github.com/openupm/openupm-cli), run the command below
-
-```bash
-openupm add nunit.analyzers.unity
-```
-
-Or open Package Manager window (Window | Package Manager) and add package from git URL
-
-```
-https://github.com/nowsprinting/nunit.analyzers.unity.git
-```
+1. Open the Project Settings window (**Editor > Project Settings**) and select **Package Manager** tab
+2. Click **+** button under the **Scoped Registries** and enter the following settings:
+    1. **Name:** `package.openupm.com`
+    2. **URL:** `https://package.openupm.com`
+    3. **Scope(s):** `nunit.analyzers.unity`
+3. Open the Package Manager window (**Window > Package Manager**) and select **My Registries** tab
+4. Select **NUnit.Analyzers for Unity** and click the **Install** button
 
 > [!NOTE]\
 > You do not need to add a reference to the test assembly definition file (asmdef).
