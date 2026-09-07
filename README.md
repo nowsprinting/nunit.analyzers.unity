@@ -2,9 +2,10 @@
 
 [![openupm](https://img.shields.io/npm/v/nunit.analyzers.unity?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/nunit.analyzers.unity/)
 
-This package includes [NUnit.Analyzers](https://github.com/nunit/nunit.analyzers) DLL and is set up for use in the Unity Editor and any IDEs.
+This package includes [NUnit.Analyzers](https://github.com/nunit/nunit.analyzers) v3.9.0 DLL and is set up to be enabled in the Unity Editor and any IDEs.
 
-There is also **no need to add** a reference to the test assembly definition file (asmdef).
+> [!NOTE]\
+> NUnit.Analyzers v3.9.0 is the final version compatible with Unity Test Framework.
 
 
 ## Required
@@ -14,17 +15,17 @@ There is also **no need to add** a reference to the test assembly definition fil
 
 ## Installation
 
-If you installed [openupm-cli](https://github.com/openupm/openupm-cli), run the command below
+1. Open the Project Settings window (**Editor > Project Settings**) and select **Package Manager** tab
+2. Click **+** button under the **Scoped Registries** and enter the following settings:
+    1. **Name:** `package.openupm.com`
+    2. **URL:** `https://package.openupm.com`
+    3. **Scope(s):** `nunit.analyzers.unity`
+3. Open the Package Manager window (**Window > Package Manager**) and select **My Registries** tab
+4. Select **NUnit.Analyzers for Unity** and click the **Install** button
 
-```bash
-openupm add nunit.analyzers.unity
-```
-
-Or open Package Manager window (Window | Package Manager) and add package from git URL
-
-```
-https://github.com/nowsprinting/nunit.analyzers.unity.git
-```
+> [!NOTE]\
+> You do not need to add a reference to the test assembly definition file (asmdef).
+> Because it's configured via an assembly definition reference file (asmref) to apply across all test assemblies.
 
 
 ## License

@@ -1,6 +1,6 @@
 {
   "name": "nunit.analyzers.unity",
-  "description": "Include NUnit.Analyzers package, See https://github.com/nunit/nunit.analyzers/releases",
+  "description": "Includes NUnit.Analyzers package. See https://github.com/nunit/nunit.analyzers/releases?page=3#release-3.9.0",
   "version": "3.9.0",
   "author": "Koji Hasegawa <hasegawa@hubsys.co.jp> (https://github.com/nowsprinting)",
   "category": "Unity Test Framework",
@@ -17,10 +17,11 @@
     "Third Party Notices.md*"
   ],
   "keywords": [
-    "Analyzer",
     "NUnit",
     "testing",
-    "tests"
+    "tests",
+    "Roslyn analyzers",
+    "static analysis"
   ],
   "license": "MIT",
   "licensesUrl": "https://github.com/nowsprinting/nunit.analyzers.unity/blob/master/LICENSE.md",
